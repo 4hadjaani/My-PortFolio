@@ -169,7 +169,7 @@ section{
     color: var(--bg-color);
     transform: scale(1.1) ;   
 }
-#service{
+#service {
     display: grid;
     grid-template-columns: 20% 40% 30%;
     grid-template-rows: 30% 20% 30%;
@@ -178,7 +178,7 @@ section{
     gap: 0rem;
 
 }
-#service>h2{
+#service>h2 , #experience>h2{
     font-size: xx-large;
     font-weight: 700;
     color: var(--primary-color);
@@ -187,7 +187,7 @@ section{
     text-decoration: underline;
     text-shadow: 0 0 10px var(--primary-color);
 }
-#service .serv{
+#service .serv {
     width: 80%;
     height: 20vh;
     border: 1px solid var(--primary-color);
@@ -204,7 +204,29 @@ section{
     box-shadow: 0 3px 14px var(--primary-color);
 }    
 
+#experience {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 01rem;
+     padding: 1rem;
 
+
+} 
+
+#experience .project{
+    width: auto;
+    border: 1px solid var(--primary-color);
+    border-radius:  1.0rem;
+    padding: 1rem  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 
 
 
@@ -309,14 +331,17 @@ p{
     padding: 1em;
 }
 
-#service{
+#service , #experience{
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
     margin-top: 50px;
 
 }
-
+#experience .project{
+    width: 90%;
+}
 }
