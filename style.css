@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    border: none;
 }
 :root{
     --primary-color: #00ff88;
@@ -56,7 +57,7 @@ ul{
 ul li{
     list-style-type: none;
 }
-ul li a {
+ a {
     text-transform: capitalize;
     text-decoration: none;
     color: var(--tp-dark-color);
@@ -151,7 +152,7 @@ section{
     gap: 1rem;
     width: 45vw;
 }
-#home button{
+ button{
     padding: .75rem 1.5rem;
     width: fit-content;
     text-transform: uppercase;
@@ -160,11 +161,13 @@ section{
     color: var(--tp-dark-color);
     background-color: var(--bg-color);
     letter-spacing: .49ch;
+    border-right: var(--primary-color);
+    border-bottom: var(--primary-color);
 }
-#home button:hover{
+ button:hover{
     box-shadow: 0 0 15px var(--primary-color);
 }
-#home button:active{
+ button:active{
     background-color: var(--primary-color);
     color: var(--bg-color);
     transform: scale(1.1) ;   
@@ -206,15 +209,16 @@ section{
 
 #experience {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
     gap: 01rem;
-     padding: 1rem;
+    padding: 1rem;
 
+    
 
 } 
 
 #experience .project{
-    width: auto;
+    max-height: 300px;
     border: 1px solid var(--primary-color);
     border-radius:  1.0rem;
     padding: 1rem  ;
@@ -289,6 +293,7 @@ ul{
 nav button{
     display: block;
     z-index: 200;
+    border: none;
 }
 
  h2{
